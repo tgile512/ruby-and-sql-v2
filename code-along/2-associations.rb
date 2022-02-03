@@ -15,4 +15,6 @@ end
 
 # 2. add association to contacts in Company model
 
+
+
 # 3. add association to company in Contact model
