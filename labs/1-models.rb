@@ -59,9 +59,16 @@ contact.save
 
 # 3. write code to display how many contacts are in the database AND each contact's info (name, email), e.g.:
 
+puts "Contacts: #{Contact.all.count}"
+
 # ---------------------------------
 # Contacts: 4
 # Andy Jassy - andy@amazon.com
 # Craig Federighi - craig@apple.com
 # Elon Musk - elon@tesla.com
 # Tim Cook - tim@apple.com
+
+contacts = Contact.all
+for contact in contacts
+    puts "#{contact.first_name} #{contact.last_name} - #{contact.email}"
+end
