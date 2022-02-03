@@ -14,16 +14,16 @@ Company.destroy_all
 
 # 2. create new companies
 
-values = { name: "Apple Inc.", url: "https://www.apple.com", city: "Cupertino", state: "CA" }
+values = { name: "Apple", url: "https://www.apple.com", city: "Cupertino", state: "CA" }
 apple = Company.new(values)
 apple.save
 
-values = { name: "Amazon.com, Inc.", url: "https://www.amazon.com", city: "Seattle", state: "WA" }
+values = { name: "Amazon", url: "https://www.amazon.com", city: "Seattle", state: "WA" }
 amazon = Company.new(values)
 amazon.save
 
 new_company = Company.new
-new_company.name = "Tesla, Inc."
+new_company.name = "Tesla"
 new_company.url = "https://www.tesla.com"
 new_company.city = "Palo Alto"
 new_company.state = "CA"

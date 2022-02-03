@@ -11,9 +11,9 @@ Contact.destroy_all
 # 1a. check out the schema file
 # 1b. check out the model file
 
-apple = Company.where({ name: "Apple Inc."})[0]
-amazon = Company.where({ name: "Amazon.com, Inc."})[0]
-tesla = Company.where({ name: "Tesla, Inc."})[0]
+apple = Company.where({ name: "Apple"})[0]
+amazon = Company.where({ name: "Amazon"})[0]
+tesla = Company.where({ name: "Tesla"})[0]
 
 # 2. create 1-2 new contacts for each company (they can be made up)
 
